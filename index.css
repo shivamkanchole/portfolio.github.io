@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Adlam+Unjoined:wght@500&family=Nunito+Sans:wght@200&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+}
+#outer_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 1440px;
+  height: 100px;
+  left: 0;
+  top: 0;
+  background-color: black;
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+#navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33px;
+  font-style: normal;
+}
+#navbar li {
+  display: flex;
+  align-items: center;
+}
+#home {
+  height: 33px;
+  width: 116px;
+}
+#project {
+  height: 33px;
+  width: 155px;
+}
+#article {
+  height: 33px;
+  width: 140px;
+}
+#contact {
+  height: 33px;
+  width: 186px;
+}
+#pic_section {
+  display: flex;
+  flex-direction: column;
+  width: 1436px;
+  height: 618px;
+  align-items: center;
+}
+#pic_content::before {
+  position: absolute;
+  content: "";
+  background: url("images/bg_d2.jpg") no-repeat center center/cover;
+  width: 1439px;
+  height: 618px;
+  top: 100px;
+  left: 41px;
+  z-index: -1;
+}
+#pic_content {
+  width: 759px;
+  height: 169px;
+  text-align: center;
+  margin-top: 250px;
+  color: white;
+}
+#name {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 98px;
+}
+#work {
+  font-size: 49px;
+  font-weight: 100;
+}
+#pic_below_box {
+  height: 360px;
+  width: 921px;
+  margin-top: 100px;
+  margin-left: 160px;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Noto Sans Adlam Unjoined", sans-serif;
+  /* font-family: 'Nunito Sans', sans-serif; */
+}
+#content_below_pic {
+  width: 1439px;
+  height: 560px;
+}
+#line {
+  line-height: 60px;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 1440px;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #e5e5e5;
+  font-family: "Nunito Sans";
+}
+.sub_heading {
+  width: 394px;
+  height: 45px;
+  margin-top: 100px;
+  margin-left: 50px;
+  font-size: 36px;
+  font-weight: 700;
+}
+hr {
+  margin-top: 21px;
+  width: 1340px;
+  height: 2px;
+  margin-left: 50px;
+  background-color: #e5e5e5;
+  border: none;
+}
+.sub_heading_containt {
+  width: 944px;
+  height: 210px;
+  margin-top: 42px;
+  margin-left: 54px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 60px;
+  font-family: "Source Serif Pro";
+}
+.sub_head {
+  margin-top: 50px;
+}
+.sub_head2 {
+  margin-top: 33px;
+}
+#social_media {
+  height: 200px;
+  width: 1448px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 100px;
+  font-family: "Noto Sans Adlam Unjoined", sans-serif;
+}
+#icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#icons div {
+  margin-left: 84px;
+  margin-right: 25px;
+}
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 1448px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Noto Sans Adlam Unjoined", sans-serif;
+}
+
+@media screen and (max-width: 375px) {
+  #outer_container {
+    margin-left: 1095px;
+  }
+  #navbar {
+    width: 1485px;
+  }
+  #pic_content::before {
+    width: 1480px;
+    top: 100px;
+    left: 0;
+  }
+  .heading {
+    width: 1480px;
+  }
+  #footer {
+    width: 1480px;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 770px) {
+  #outer_container {
+    margin-left: 700px;
+  }
+  #navbar {
+    width: 1485px;
+  }
+  #pic_content::before {
+    width: 1480px;
+    top: 100;
+    left: 0;
+    overflow-clip-margin: content-box;
+  }
+  .heading {
+    width: 1490px;
+  }
+  #footer {
+    width: 1480px;
+  }
+}
